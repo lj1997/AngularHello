@@ -1,8 +1,9 @@
+
 /*
  * @Author: your name
  * @Date: 2021-02-16 14:55:25
- * @LastEditTime: 2021-02-18 09:13:56
- * @LastEditors: your name
+ * @LastEditTime: 2021-02-18 10:28:43
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \AngularHello\src\app\app.module.ts
  */
@@ -14,6 +15,7 @@ import { AppComponent } from './app.component';
 import { NewsComponent } from './components/news/news.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
+import { StorageService } from './services/storage.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [StorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
